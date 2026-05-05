@@ -1,6 +1,18 @@
 ---
 deployment:
   tasks:
-    - /bin/mkdir -p /home/larissab/public_html/genesis
-    - /bin/rm -rf /home/larissab/public_html/genesis/assets
-    - /bin/cp -R dist/* /home/larissab/public_html/genesis/
+    - export DEPLOYPATH=/home/larissab/public_html/genesis
+
+    # cria a pasta
+    - /bin/mkdir -p $DEPLOYPATH
+
+    # limpa o destino (pra não sobrar arquivo velho)
+    - /bin/rm -rf $DEPLOYPATH/*
+
+    # copia TUDO da raiz do repo pro destino
+    # (inclui index.html, css, js, webp, mp4, etc)
+    - /bin/cp -R ./* $DEPLOYPATH/
+
+    # remove o que não deve ir pro site
+    - /bin/rm -f $DEPLOYPATH/.cpanel.yml
+    - /bin/rm -f $DEPLOYPATH/.gitignore
