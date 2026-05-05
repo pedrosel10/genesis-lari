@@ -597,9 +597,9 @@ document.addEventListener('DOMContentLoaded', function () {
       if (target) {
         e.preventDefault();
         gsap.to(window, {
-          scrollTo: { y: target, offsetY: 0 },
-          duration: 1,
-          ease: 'power2.inOut'
+          scrollTo: { y: target, offsetY: 24 }, // offsetY de 24px para respirar
+          duration: 1.2,
+          ease: 'power3.inOut'
         });
       }
     });

@@ -99,7 +99,7 @@
 
     <h3 class="invest-subtitle">Escolha seu ingresso:</h3>
 
-    <div class="pricing-grid-v2">
+    <div class="pricing-grid-v2" id="tabela-precos">
       <div class="price-card-v2">
         <div class="price-card-v2__label">1º Lote</div>
         <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>397<span class="price-card-v2__cents">,00</span></div>
@@ -233,7 +233,7 @@
       <!-- SPEAKER 2 -->
       <div class="speaker-card-v2">
         <div class="speaker-card-v2__img">
-          <img src="duda.webp" alt="Duda Soares" class="speaker-img">
+          <img src="karol.webp" alt="Duda Soares" class="speaker-img">
         </div>
         <div class="speaker-card-v2__body">
           <span class="speaker-card-v2__role">Palestrante</span>
@@ -256,7 +256,7 @@
       <!-- SPEAKER 3 -->
       <div class="speaker-card-v2">
         <div class="speaker-card-v2__img">
-          <img src="karol.webp" alt="Karol Valério" class="speaker-img">
+          <img src="duda.webp" alt="Duda Soares" class="speaker-img">
         </div>
         <div class="speaker-card-v2__body">
           <span class="speaker-card-v2__role">Palestrante</span>
@@ -322,7 +322,7 @@
     <p style="max-width:620px">Se você sente que está pronta para ser percebida como a mulher que se tornou… essa imersão é para você.</p>
     <span class="badge">04 de Julho de 2026 • 9:15h às 20h • Balneário Camboriú/SC</span>
     <br>
-    <a href="#investimento" class="btn btn--primary btn--large" style="margin-top:8px">
+    <a href="#tabela-precos" class="btn btn--primary btn--large" style="margin-top:8px">
       <span class="btn__text">Quero viver a Imersão Gênesis</span>
       <span class="btn__icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
