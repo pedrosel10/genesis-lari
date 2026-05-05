@@ -29,7 +29,7 @@
     <h2>Assista e entenda tudo antes de garantir sua vaga</h2>
     <p style="margin:0 auto 1rem">Um vídeo direto sobre a imersão, vendas e principais dúvidas…</p>
     <div class="video-container">
-      <video src="VIDEO-GENESIS.MP4" controls preload="metadata" poster="">
+      <video src="VIDEO-GENESIS.MP4" controls preload="metadata" poster="capavideo.webp">
         Seu navegador não suporta a tag de vídeo.
       </video>
     </div>
@@ -302,12 +302,4 @@
   </div>
 </section>
 `;
-
-  // Carregar a capa do vídeo após o carregamento da página
-  window.addEventListener('load', function() {
-    const video = document.querySelector('.video-container video');
-    if (video) {
-      video.setAttribute('poster', 'capavideo.webp');
-    }
-  });
 })();
