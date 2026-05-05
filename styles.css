@@ -183,6 +183,8 @@ p {
   box-shadow: 0 0 20px rgba(0, 122, 138, 0.25), 0 4px 15px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  isolation: isolate;
   padding: 20px 50px 20px 70px;
   z-index: 1;
 }
