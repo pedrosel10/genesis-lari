@@ -172,46 +172,54 @@ p {
   border: none;
   border-radius: 100px;
   cursor: pointer;
-  transition: all var(--transition);
+  transition: transform 0.4s cubic-bezier(.4, 0, .2, 1),
+              background 0.4s ease,
+              box-shadow 0.4s ease,
+              filter 0.4s ease;
   text-decoration: none;
   letter-spacing: 0.02em;
+  will-change: transform;
 }
 
 .btn--primary {
   background: var(--primary);
   color: #fff;
-  box-shadow: 0 0 20px rgba(0, 122, 138, 0.25), 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 122, 138, 0.2), 0 4px 12px rgba(0, 0, 0, 0.25);
   position: relative;
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   isolation: isolate;
-  padding: 20px 50px 20px 70px;
+  padding: 20px 60px;
   z-index: 1;
 }
 
 .btn--primary:hover {
   background: var(--primary-hover);
   color: #fff;
-  box-shadow: 0 0 30px rgba(0, 160, 179, 0.35), 0 6px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-2px);
-  padding: 20px 80px 20px 50px;
-  filter: brightness(1.1);
+  box-shadow: 0 0 28px rgba(0, 160, 179, 0.3), 0 6px 18px rgba(0, 0, 0, 0.35);
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+}
+
+.btn--primary:active {
+  transform: translateY(-1px);
+  filter: brightness(1);
 }
 
 .btn--primary::before {
   content: "";
   height: 100%;
-  width: 60px;
+  width: 50px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -20%;
   opacity: 0;
   background: #ffffff;
-  box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.3);
   transform: skewX(-20deg);
   mix-blend-mode: overlay;
   pointer-events: none;
-  animation: btn-shine 2.5s linear infinite;
+  animation: btn-shine 3.5s ease-in-out infinite;
   z-index: 1;
 }
 
@@ -221,17 +229,13 @@ p {
     left: -20%;
   }
 
-  25% {
-    opacity: 0.2;
+  40% {
+    opacity: 0.35;
   }
 
-  50% {
-    opacity: 0.5;
-    left: 50%;
-  }
-
-  75% {
-    opacity: 0.2;
+  60% {
+    opacity: 0.35;
+    left: 120%;
   }
 
   100% {
@@ -243,41 +247,39 @@ p {
 .btn__text {
   position: relative;
   z-index: 2;
-  transition: 0.5s ease all;
+  transition: transform 0.45s cubic-bezier(.4, 0, .2, 1);
 }
 
 .btn--primary:hover .btn__text {
-  transform: scale(1.05);
+  transform: translateX(-8px);
 }
 
 .btn__icon {
   position: absolute;
   top: 50%;
-  left: 14%;
-  transform: translate(-50%, -50%) scale(0.4);
+  right: 20px;
+  transform: translateY(-50%) scale(0.5);
   background: #fff;
   color: var(--primary);
-  padding: 4px;
+  padding: 6px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: 0.5s ease all;
+  transition: all 0.45s cubic-bezier(.4, 0, .2, 1);
   z-index: 2;
 }
 
 .btn--primary:hover .btn__icon {
-  left: 85%;
-  transform: translate(-50%, -50%) scale(1);
-  padding: 8px;
+  transform: translateY(-50%) scale(1);
   opacity: 1;
   color: #070A0C;
 }
 
 .btn--primary:hover .btn__icon svg {
-  transform: rotate(360deg);
-  transition: 0.5s ease;
+  transform: translateX(2px);
+  transition: transform 0.35s cubic-bezier(.4, 0, .2, 1);
 }
 
 .btn--outline {
@@ -297,6 +299,7 @@ p {
   border-radius: 100px;
   min-height: 64px;
 }
+
 
 .micro-text {
   font-size: 0.82rem;
@@ -401,7 +404,7 @@ p {
   width: 120px;
   height: auto;
   display: block;
-  margin: 0 auto 2rem;
+  margin-bottom: 1.5rem;
   position: relative;
   z-index: 2;
   filter: drop-shadow(0 0 20px rgba(0, 122, 138, 0.3));

@@ -25,72 +25,79 @@ document.addEventListener('DOMContentLoaded', function () {
   // ─────────────────────────────────────────────
   // 1. HERO — Cinematic Entrance
   // ─────────────────────────────────────────────
-  const heroTl = gsap.timeline({ delay: 0.3 });
+  const heroTl = gsap.timeline({ delay: 0.2 });
 
   // Background subtle scale-in (Ken Burns lite)
   heroTl.fromTo('.hero__bg',
-    { scale: 1.15, opacity: 0 },
-    { scale: 1, opacity: 1, duration: 2, ease: 'power2.out' }
+    { scale: 1.08, opacity: 0 },
+    { scale: 1, opacity: 1, duration: 1.8, ease: 'power2.out' }
   );
 
   // Overlay fades in
   heroTl.fromTo('.hero__overlay',
     { opacity: 0 },
-    { opacity: 1, duration: 1.2 },
-    0.2
+    { opacity: 1, duration: 1 },
+    0.15
+  );
+
+  // Logo fades in
+  heroTl.fromTo('.hero__logo',
+    { y: -15, opacity: 0, scale: 0.9 },
+    { y: 0, opacity: 1, scale: 1, duration: 0.8, ease: 'power2.out' },
+    0.4
   );
 
   // Badge slides down
   heroTl.fromTo('.hero__content .badge',
-    { y: -30, opacity: 0 },
-    { y: 0, opacity: 1, duration: 0.8 },
+    { y: -20, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.7 },
     0.6
   );
 
-  // Title — each line staggered
+  // Title reveal
   heroTl.fromTo('.hero h1',
-    { y: 60, opacity: 0, clipPath: 'inset(0 0 100% 0)' },
-    { y: 0, opacity: 1, clipPath: 'inset(0 0 0% 0)', duration: 1.2, ease: 'power4.out' },
-    0.8
+    { y: 30, opacity: 0 },
+    { y: 0, opacity: 1, duration: 1, ease: 'power3.out' },
+    0.75
   );
 
   // Subtitle text reveal
   heroTl.fromTo('.hero__sub',
-    { y: 30, opacity: 0 },
-    { y: 0, opacity: 1, duration: 0.9 },
-    1.2
+    { y: 20, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.8 },
+    1.0
   );
 
   // Info line
   heroTl.fromTo('.hero__info',
-    { y: 20, opacity: 0 },
-    { y: 0, opacity: 1, duration: 0.7 },
-    1.5
+    { y: 15, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.6 },
+    1.2
   );
 
-  // CTA button scales in with a spring
+  // CTA button
   heroTl.fromTo('.hero .btn--primary',
-    { y: 20, opacity: 0, scale: 0.9 },
-    { y: 0, opacity: 1, scale: 1, duration: 0.8, ease: 'back.out(1.4)' },
-    1.7
+    { y: 15, opacity: 0, scale: 0.95 },
+    { y: 0, opacity: 1, scale: 1, duration: 0.7, ease: 'power2.out' },
+    1.4
   );
 
   // Micro text
   heroTl.fromTo('.hero .micro-text',
     { opacity: 0 },
-    { opacity: 1, duration: 0.6 },
-    2.0
+    { opacity: 1, duration: 0.5 },
+    1.7
   );
 
   // Slow parallax on hero background while scrolling
   gsap.to('.hero__bg', {
-    y: '30%',
+    y: '15%',
     ease: 'none',
     scrollTrigger: {
       trigger: '.hero',
       start: 'top top',
       end: 'bottom top',
-      scrub: true
+      scrub: 1
     }
   });
 
@@ -105,12 +112,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (h2) {
       gsap.fromTo(h2,
-        { y: 50, opacity: 0 },
+        { y: 25, opacity: 0 },
         {
-          y: 0, opacity: 1, duration: 1,
+          y: 0, opacity: 1, duration: 0.9,
           scrollTrigger: {
             trigger: h2,
-            start: 'top 85%',
+            start: 'top 88%',
             toggleActions: 'play none none none'
           }
         }
@@ -119,12 +126,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (p) {
       gsap.fromTo(p,
-        { y: 30, opacity: 0 },
+        { y: 18, opacity: 0 },
         {
-          y: 0, opacity: 1, duration: 0.8, delay: 0.15,
+          y: 0, opacity: 1, duration: 0.7, delay: 0.1,
           scrollTrigger: {
             trigger: p,
-            start: 'top 85%',
+            start: 'top 88%',
             toggleActions: 'play none none none'
           }
         }
@@ -139,12 +146,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Problem cards
   gsap.utils.toArray('.problem-grid .card').forEach(function (card, i) {
     gsap.fromTo(card,
-      { y: 40, opacity: 0 },
+      { y: 20, opacity: 0 },
       {
-        y: 0, opacity: 1, duration: 0.8, delay: i * 0.15,
+        y: 0, opacity: 1, duration: 0.7, delay: i * 0.12,
         scrollTrigger: {
           trigger: card,
-          start: 'top 88%',
+          start: 'top 90%',
           toggleActions: 'play none none none'
         }
       }
@@ -157,12 +164,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   gsap.utils.toArray('.highlight-box').forEach(function (box) {
     gsap.fromTo(box,
-      { x: -60, opacity: 0 },
+      { x: -30, opacity: 0 },
       {
-        x: 0, opacity: 1, duration: 0.9, ease: 'power3.out',
+        x: 0, opacity: 1, duration: 0.8, ease: 'power3.out',
         scrollTrigger: {
           trigger: box,
-          start: 'top 88%',
+          start: 'top 90%',
           toggleActions: 'play none none none'
         }
       }
@@ -184,15 +191,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     gsap.fromTo(journeyItems,
-      { y: 30, opacity: 0, scale: 0.85 },
+      { y: 15, opacity: 0, scale: 0.92 },
       {
         y: 0, opacity: 1, scale: 1,
-        duration: 0.6,
-        stagger: 0.1,
-        ease: 'back.out(1.2)',
+        duration: 0.5,
+        stagger: 0.08,
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: '.journey',
-          start: 'top 85%',
+          start: 'top 88%',
           toggleActions: 'play none none none'
         }
       }
@@ -206,14 +213,14 @@ document.addEventListener('DOMContentLoaded', function () {
   var benefitItems = gsap.utils.toArray('.benefit-item');
   if (benefitItems.length) {
     gsap.fromTo(benefitItems,
-      { x: -30, opacity: 0 },
+      { x: -15, opacity: 0 },
       {
         x: 0, opacity: 1,
-        duration: 0.6,
-        stagger: 0.06,
+        duration: 0.5,
+        stagger: 0.04,
         scrollTrigger: {
           trigger: '.benefits-grid',
-          start: 'top 82%',
+          start: 'top 85%',
           toggleActions: 'play none none none'
         }
       }
@@ -227,15 +234,15 @@ document.addEventListener('DOMContentLoaded', function () {
   var proofCards = gsap.utils.toArray('.proof-card');
   if (proofCards.length) {
     gsap.fromTo(proofCards,
-      { y: 50, opacity: 0, scale: 0.92 },
+      { y: 25, opacity: 0, scale: 0.96 },
       {
         y: 0, opacity: 1, scale: 1,
-        duration: 0.8,
-        stagger: 0.12,
-        ease: 'power3.out',
+        duration: 0.7,
+        stagger: 0.1,
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: '.proof-grid',
-          start: 'top 85%',
+          start: 'top 88%',
           toggleActions: 'play none none none'
         }
       }
@@ -249,15 +256,15 @@ document.addEventListener('DOMContentLoaded', function () {
   var valueTags = gsap.utils.toArray('.value-tag');
   if (valueTags.length) {
     gsap.fromTo(valueTags,
-      { y: 20, opacity: 0, scale: 0.85 },
+      { y: 12, opacity: 0, scale: 0.92 },
       {
         y: 0, opacity: 1, scale: 1,
-        duration: 0.5,
-        stagger: 0.06,
-        ease: 'back.out(1.5)',
+        duration: 0.4,
+        stagger: 0.04,
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: '.value-tags',
-          start: 'top 85%',
+          start: 'top 88%',
           toggleActions: 'play none none none'
         }
       }
@@ -271,15 +278,15 @@ document.addEventListener('DOMContentLoaded', function () {
   var priceCards = gsap.utils.toArray('.price-card-v2');
   if (priceCards.length) {
     gsap.fromTo(priceCards,
-      { y: 60, opacity: 0 },
+      { y: 25, opacity: 0 },
       {
         y: 0, opacity: 1,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: 'power3.out',
+        duration: 0.7,
+        stagger: 0.08,
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: '.pricing-grid-v2',
-          start: 'top 85%',
+          start: 'top 88%',
           toggleActions: 'play none none none'
         }
       }
@@ -293,14 +300,14 @@ document.addEventListener('DOMContentLoaded', function () {
   var forWhoItems = gsap.utils.toArray('.for-who-item');
   if (forWhoItems.length) {
     gsap.fromTo(forWhoItems,
-      { x: 30, opacity: 0 },
+      { x: 15, opacity: 0 },
       {
         x: 0, opacity: 1,
-        duration: 0.6,
-        stagger: 0.06,
+        duration: 0.5,
+        stagger: 0.04,
         scrollTrigger: {
           trigger: '.for-who-grid',
-          start: 'top 82%',
+          start: 'top 85%',
           toggleActions: 'play none none none'
         }
       }
@@ -315,15 +322,15 @@ document.addEventListener('DOMContentLoaded', function () {
   var speakerGrid = document.querySelector('.speakers-grid-v2') || document.querySelector('.speakers-grid');
   if (speakerCards.length && speakerGrid) {
     gsap.fromTo(speakerCards,
-      { y: 50, opacity: 0, scale: 0.9 },
+      { y: 25, opacity: 0, scale: 0.96 },
       {
         y: 0, opacity: 1, scale: 1,
-        duration: 0.8,
-        stagger: 0.15,
-        ease: 'power3.out',
+        duration: 0.7,
+        stagger: 0.12,
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: speakerGrid,
-          start: 'top 85%',
+          start: 'top 88%',
           toggleActions: 'play none none none'
         }
       }
@@ -339,12 +346,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (aboutText) {
     gsap.fromTo(aboutText,
-      { x: -50, opacity: 0 },
+      { x: -25, opacity: 0 },
       {
-        x: 0, opacity: 1, duration: 1,
+        x: 0, opacity: 1, duration: 0.8,
         scrollTrigger: {
           trigger: '.about-grid',
-          start: 'top 80%',
+          start: 'top 85%',
           toggleActions: 'play none none none'
         }
       }
@@ -353,12 +360,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (aboutImage) {
     gsap.fromTo(aboutImage,
-      { x: 50, opacity: 0 },
+      { x: 25, opacity: 0 },
       {
-        x: 0, opacity: 1, duration: 1, delay: 0.2,
+        x: 0, opacity: 1, duration: 0.8, delay: 0.15,
         scrollTrigger: {
           trigger: '.about-grid',
-          start: 'top 80%',
+          start: 'top 85%',
           toggleActions: 'play none none none'
         }
       }
@@ -374,14 +381,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (badge.closest('.hero')) return;
 
     gsap.fromTo(badge,
-      { y: 15, opacity: 0, scale: 0.9 },
+      { y: 10, opacity: 0, scale: 0.95 },
       {
         y: 0, opacity: 1, scale: 1,
-        duration: 0.6,
-        ease: 'back.out(1.4)',
+        duration: 0.5,
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: badge,
-          start: 'top 90%',
+          start: 'top 92%',
           toggleActions: 'play none none none'
         }
       }
@@ -389,7 +396,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // ─────────────────────────────────────────────
-  // 14. CTA BUTTONS — Pulse attention on scroll
+  // 14. CTA BUTTONS — Fade in on scroll
   // ─────────────────────────────────────────────
 
   gsap.utils.toArray('.btn--primary').forEach(function (btn) {
@@ -397,14 +404,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (btn.closest('.hero')) return;
 
     gsap.fromTo(btn,
-      { y: 20, opacity: 0, scale: 0.95 },
+      { y: 12, opacity: 0 },
       {
-        y: 0, opacity: 1, scale: 1,
-        duration: 0.7,
-        ease: 'back.out(1.3)',
+        y: 0, opacity: 1,
+        duration: 0.6,
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: btn,
-          start: 'top 90%',
+          start: 'top 92%',
           toggleActions: 'play none none none'
         }
       }
@@ -420,11 +427,11 @@ document.addEventListener('DOMContentLoaded', function () {
       { scaleX: 0 },
       {
         scaleX: 1,
-        duration: 0.8,
+        duration: 0.7,
         ease: 'power2.inOut',
         scrollTrigger: {
           trigger: sep,
-          start: 'top 92%',
+          start: 'top 94%',
           toggleActions: 'play none none none'
         }
       }
@@ -438,14 +445,14 @@ document.addEventListener('DOMContentLoaded', function () {
   var videoContainer = document.querySelector('.video-container');
   if (videoContainer) {
     gsap.fromTo(videoContainer,
-      { y: 40, opacity: 0, scale: 0.95 },
+      { y: 20, opacity: 0, scale: 0.98 },
       {
         y: 0, opacity: 1, scale: 1,
-        duration: 1,
-        ease: 'power3.out',
+        duration: 0.8,
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: videoContainer,
-          start: 'top 85%',
+          start: 'top 88%',
           toggleActions: 'play none none none'
         }
       }
