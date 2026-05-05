@@ -598,4 +598,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // ─────────────────────────────────────────────
+  // REVEAL BODY TO PREVENT FOUC (Flash of Unstyled Content)
+  // ─────────────────────────────────────────────
+  document.body.classList.add('is-loaded');
+
 });

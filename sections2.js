@@ -278,11 +278,7 @@
         <p>O Método Gênesis integra identidade, imagem, presença e posicionamento em um processo único e profundo. Não é sobre tendências — é sobre verdade.</p>
       </div>
       <div>
-        <div class="placeholder" style="min-height:420px">
-          <span class="placeholder__icon">📷</span>
-          PLACEHOLDER DA IMAGEM
-          <span class="placeholder__caption">Você vai inserir a imagem aqui</span>
-        </div>
+        <img src="fotolari.webp" alt="Larissa Bovo" style="width:100%; border-radius:var(--radius); box-shadow:0 8px 32px rgba(0,0,0,0.25);">
       </div>
     </div>
   </div>
@@ -306,4 +302,12 @@
   </div>
 </section>
 `;
+
+  // Carregar a capa do vídeo após o carregamento da página
+  window.addEventListener('load', function() {
+    const video = document.querySelector('.video-container video');
+    if (video) {
+      video.setAttribute('poster', 'capavideo.webp');
+    }
+  });
 })();
