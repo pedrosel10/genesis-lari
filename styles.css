@@ -966,6 +966,7 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  min-height: 420px;
 }
 
 .price-card-v2::before {
@@ -1076,6 +1077,45 @@ p {
 
 .price-card-v2--featured .price-card-v2__label {
   color: var(--text-secondary);
+}
+
+/* Pricing card buttons */
+.btn--pricing {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 20px;
+  margin-top: auto;
+  width: 100%;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  transition: all 0.3s ease;
+  letter-spacing: 0.02em;
+}
+
+.btn--pricing:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 122, 138, 0.15);
+}
+
+.price-card-v2--featured .btn--pricing {
+  background: var(--primary);
+  color: #fff;
+}
+
+.price-card-v2--featured .btn--pricing:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  box-shadow: 0 6px 16px rgba(0, 122, 138, 0.25);
 }
 
 /* =====================

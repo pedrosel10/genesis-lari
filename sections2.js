@@ -105,12 +105,18 @@
         <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>397<span class="price-card-v2__cents">,00</span></div>
         <div class="price-card-v2__desc">Acesso à imersão completa</div>
         <div class="price-card-v2__tag">Condição especial de lançamento</div>
+        <a href="https://chk.eduzz.com/6W4GOKNN0Z" target="_blank" class="btn btn--pricing">
+          <span class="btn__text">Garantir Vaga</span>
+        </a>
       </div>
       <div class="price-card-v2">
         <div class="price-card-v2__label">2º Lote</div>
         <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>497<span class="price-card-v2__cents">,00</span></div>
         <div class="price-card-v2__desc">Acesso à imersão completa</div>
         <div class="price-card-v2__tag">Após encerramento do 1º lote</div>
+        <a href="https://chk.eduzz.com/R9JXD1480X" target="_blank" class="btn btn--pricing">
+          <span class="btn__text">Garantir Vaga</span>
+        </a>
       </div>
       <div class="price-card-v2 price-card-v2--featured">
         <div class="price-card-v2__badge-top">Mais escolhido</div>
@@ -118,22 +124,22 @@
         <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>680<span class="price-card-v2__cents">,00</span></div>
         <div class="price-card-v2__desc">Imersão + benefícios exclusivos</div>
         <div class="price-card-v2__tag">Experiência premium completa</div>
+        <a href="https://chk.eduzz.com/797ZDX2V0E" target="_blank" class="btn btn--pricing">
+          <span class="btn__text">Garantir Vaga</span>
+        </a>
       </div>
       <div class="price-card-v2">
         <div class="price-card-v2__label">Ingresso Duplo</div>
         <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>680<span class="price-card-v2__cents">,00</span></div>
         <div class="price-card-v2__desc">2 ingressos pelo preço de 1 Diamond</div>
         <div class="price-card-v2__tag">Traga alguém e divida a experiência</div>
+        <a href="https://chk.eduzz.com/D0R8NYB69Y" target="_blank" class="btn btn--pricing">
+          <span class="btn__text">Garantir Vaga</span>
+        </a>
       </div>
     </div>
 
     <div style="margin-top:48px">
-      <a href="#" class="btn btn--primary btn--large">
-        <span class="btn__text">Quero viver a Imersão Gênesis</span>
-        <span class="btn__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </span>
-      </a>
       <p class="micro-text" style="margin-top:16px">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:4px"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         Vagas limitadas — garanta a sua antes do próximo lote.
