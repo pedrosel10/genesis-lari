@@ -6,13 +6,15 @@ deployment:
     # cria a pasta
     - /bin/mkdir -p $DEPLOYPATH
 
-    # limpa o destino (pra não sobrar arquivo velho)
-    - /bin/rm -rf $DEPLOYPATH/*
+    # limpa o destino, mas MANTÉM o vídeo
+    - /usr/bin/find $DEPLOYPATH -mindepth 1 -maxdepth 1 ! -name 'VIDEO-GENESIS.MP4' -exec /bin/rm -rf {} \;
 
     # copia TUDO da raiz do repo pro destino
-    # (inclui index.html, css, js, webp, mp4, etc)
     - /bin/cp -R ./* $DEPLOYPATH/
 
     # remove o que não deve ir pro site
     - /bin/rm -f $DEPLOYPATH/.cpanel.yml
     - /bin/rm -f $DEPLOYPATH/.gitignore
+
+    # (opcional) garante que o deploy nunca sobrescreva o vídeo do servidor
+    - /bin/rm -f $DEPLOYPATH/VIDEO-GENESIS.MP4

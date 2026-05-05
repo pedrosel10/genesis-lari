@@ -8,15 +8,29 @@
 <!-- ========== SEÇÃO 7 — LOCAL ========== -->
 <section class="section" id="local">
   <div class="container fade-in text-center">
+    <span class="badge" style="margin-bottom:1.8rem">O Espaço</span>
     <h2>Um ambiente à altura do que você vai construir.</h2>
-    <div class="placeholder" style="min-height:360px;max-width:400px;margin:40px auto 0">
-      <span class="placeholder__icon">📷</span>
-      PLACEHOLDER DA IMAGEM
-      <span class="placeholder__caption">Você vai inserir a imagem aqui</span>
+    <p style="margin:0 auto 1rem;max-width:560px">Cada detalhe do espaço foi escolhido para que a experiência seja imersiva, elegante e transformadora.</p>
+
+    <div class="venue-gallery">
+      <div class="venue-gallery__main">
+        <img src="auditorioa.webp" alt="Auditório Evolution Corporate — Vista principal" class="venue-gallery__img">
+        <div class="venue-gallery__overlay"></div>
+      </div>
+      <div class="venue-gallery__secondary">
+        <img src="auditoriob.webp" alt="Auditório Evolution Corporate — Vista lateral" class="venue-gallery__img">
+        <div class="venue-gallery__overlay"></div>
+      </div>
     </div>
-    <div class="venue-info" style="margin-top:32px">
-      <p><strong>Local: Evolution Corporate</strong></p>
-      <p>Rua Miguel Matte, 687. Evolution Corporate.<br>Centro, Balneário Camboriú/SC.</p>
+
+    <div class="venue-card">
+      <div class="venue-card__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="venue-card__details">
+        <h3 style="margin-bottom:4px;font-family:var(--font-serif);font-size:1.3rem">Evolution Corporate</h3>
+        <p style="margin:0;color:var(--text-secondary);font-size:0.92rem">Rua Miguel Matte, 687 · Centro<br>Balneário Camboriú/SC</p>
+      </div>
     </div>
   </div>
 </section>
