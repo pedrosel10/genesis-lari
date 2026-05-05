@@ -56,7 +56,7 @@
 <section class="section invest-section" id="investimento">
   <div class="invest-glow"></div>
   <div class="container fade-in text-center" style="position:relative;z-index:1">
-    <img src="logo-azul.svg" alt="Imersão Gênesis" class="section-logo">
+    <img src="logoverdeescuro.svg" alt="Imersão Gênesis" class="section-logo">
     <span class="badge" style="margin-bottom:1.8rem">Investimento</span>
     <h2>Não é apenas um evento.<br>É um novo começo.</h2>
     <p style="margin:0 auto 1.5rem;max-width:560px">Tudo foi pensado para que a experiência seja completa, profunda e memorável.</p>
@@ -283,14 +283,13 @@
     <div class="about-grid" style="margin-top:40px">
       <div class="about-text">
         <h3>Formação</h3>
-        <p>Consultora de imagem e estilo certificada, com formações em coloração pessoal, visagismo e comunicação não-verbal.</p>
+        <p>Formada em Design de moda, com curso profissionalizante em Moda pelo Centro Europeu e pós-graduada em Marketing Digital pelo Senac , possui inúmeros cursos na área do vestuário como modelagem, desenho de moda, costura e computação gráfica para moda. Atualmente é mestranda em Design do Vestuário e Moda pela UDESC.</p>
 
         <h3>Trajetória</h3>
-        <p>Ao longo dos últimos anos, Larissa acompanhou a transformação de centenas de mulheres — não apenas na forma como se vestem, mas na forma como se percebem e se posicionam.</p>
-        <p>Cada imersão, cada consultoria e cada encontro é guiado por um princípio: a roupa é o último passo. Antes, vem a mulher.</p>
+        <p>Começou a empreender com 24 anos e ganhou vasta experiência em agências de publicidade em marketing de moda e então, no ano de 2020 relançou sua marca de moda fitness. Hoje, após sua especialização em Consultoria de imagem e estilo em Paris com Andréia Furco e sua própria transformação de imagem lançou seu próprio método chamado Gênesis, na qual ajuda mulheres a se posicionarem como referência em suas áreas. Especialista em posicionamento premium transforma mulheres inseguras em mulheres com autoridade.</p>
 
-        <h3>Método</h3>
-        <p>O Método Gênesis integra identidade, imagem, presença e posicionamento em um processo único e profundo. Não é sobre tendências — é sobre verdade.</p>
+        <h3>Atuação</h3>
+        <p>Trabalha de forma online e presencial através de consultorias, mentorias, palestras, imersões e workshops.</p>
       </div>
       <div>
         <img src="fotolari.webp" alt="Larissa Bovo" style="width:100%; border-radius:var(--radius); box-shadow:0 8px 32px rgba(0,0,0,0.25);">
@@ -304,7 +303,7 @@
 <!-- ========== SEÇÃO 13 — CTA FINAL ========== -->
 <section class="final-cta" id="cta-final">
   <div class="container fade-in">
-    <img src="logo-azul.svg" alt="Imersão Gênesis" class="section-logo">
+    <img src="logoverdeescuro.svg" alt="Imersão Gênesis" class="section-logo">
     <h2>Antes de mudar a roupa…<br>uma nova mulher começa a surgir.</h2>
     <p style="max-width:620px">Se você sente que está pronta para ser percebida como a mulher que se tornou… essa imersão é para você.</p>
     <span class="badge">04 de Julho de 2026 • 9:15h às 20h • Balneário Camboriú/SC</span>
