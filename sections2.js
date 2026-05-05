@@ -292,7 +292,15 @@
         <p>Trabalha de forma online e presencial através de consultorias, mentorias, palestras, imersões e workshops.</p>
       </div>
       <div>
-        <img src="fotolari.webp" alt="Larissa Bovo" style="width:100%; border-radius:var(--radius); box-shadow:0 8px 32px rgba(0,0,0,0.25);">
+        <figure class="editorial-frame">
+          <div class="editorial-frame__box">
+            <img src="fotolari.webp" alt="Larissa Bovo">
+          </div>
+          <figcaption class="editorial-frame__caption">
+            <span>FIG. 01</span>
+            <span>LARISSA BOVO</span>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </div>
