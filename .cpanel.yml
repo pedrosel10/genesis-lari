@@ -1,16 +1,6 @@
 ---
 deployment:
   tasks:
-    # Ajuste se seu usuário do cPanel não for "larissab"
-    - export DEPLOYPATH=/home/larissab/public_html/genesis
-
-    # Garante a pasta do deploy
-    - /bin/mkdir -p $DEPLOYPATH
-
-    # (Opcional) Build do projeto (descomente se precisar buildar no servidor)
-    # - /usr/local/bin/npm ci
-    # - /usr/local/bin/npm run build
-
-    # Limpa destino e publica a dist
-    - /bin/rm -rf $DEPLOYPATH/*
-    - /bin/cp -R dist/* $DEPLOYPATH/
+    - /bin/mkdir -p /home/larissab/public_html/genesis
+    - /bin/rm -rf /home/larissab/public_html/genesis/assets
+    - /bin/cp -R dist/* /home/larissab/public_html/genesis/
