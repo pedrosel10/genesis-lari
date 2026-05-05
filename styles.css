@@ -370,6 +370,7 @@ p {
   align-items: center;
   position: relative;
   overflow: hidden;
+  background-color: #091114;
 }
 
 .hero__bg {
@@ -393,6 +394,38 @@ p {
   position: relative;
   z-index: 2;
   max-width: 650px;
+}
+
+/* Logo in hero */
+.hero__logo {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 0 20px rgba(0, 122, 138, 0.3));
+  transition: filter 0.4s ease;
+}
+
+.hero__logo:hover {
+  filter: drop-shadow(0 0 30px rgba(0, 122, 138, 0.5));
+}
+
+/* Logo in sections (investimento, CTA, etc.) */
+.section-logo {
+  width: 80px;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  display: block;
+  filter: drop-shadow(0 0 16px rgba(0, 122, 138, 0.25));
+  opacity: 0.85;
+  transition: all 0.4s ease;
+}
+
+.section-logo:hover {
+  filter: drop-shadow(0 0 24px rgba(0, 122, 138, 0.45));
+  opacity: 1;
 }
 
 .hero h1 {

@@ -56,6 +56,7 @@
 <section class="section invest-section" id="investimento">
   <div class="invest-glow"></div>
   <div class="container fade-in text-center" style="position:relative;z-index:1">
+    <img src="logo-azul.svg" alt="Imersão Gênesis" class="section-logo">
     <span class="badge" style="margin-bottom:1.8rem">Investimento</span>
     <h2>Não é apenas um evento.<br>É um novo começo.</h2>
     <p style="margin:0 auto 1.5rem;max-width:560px">Tudo foi pensado para que a experiência seja completa, profunda e memorável.</p>
@@ -303,6 +304,7 @@
 <!-- ========== SEÇÃO 13 — CTA FINAL ========== -->
 <section class="final-cta" id="cta-final">
   <div class="container fade-in">
+    <img src="logo-azul.svg" alt="Imersão Gênesis" class="section-logo">
     <h2>Antes de mudar a roupa…<br>uma nova mulher começa a surgir.</h2>
     <p style="max-width:620px">Se você sente que está pronta para ser percebida como a mulher que se tornou… essa imersão é para você.</p>
     <span class="badge">04 de Julho de 2026 • 9:15h às 20h • Balneário Camboriú/SC</span>
