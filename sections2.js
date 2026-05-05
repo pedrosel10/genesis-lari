@@ -1,0 +1,309 @@
+// Sections 7–13 injected via JS to keep HTML file manageable
+(function () {
+  const target = document.getElementById('part2');
+  if (!target) return;
+  target.outerHTML = `
+<hr class="separator">
+
+<!-- ========== SEÇÃO 7 — LOCAL ========== -->
+<section class="section" id="local">
+  <div class="container fade-in text-center">
+    <h2>Um ambiente à altura do que você vai construir.</h2>
+    <div class="placeholder" style="min-height:360px;max-width:400px;margin:40px auto 0">
+      <span class="placeholder__icon">📷</span>
+      PLACEHOLDER DA IMAGEM
+      <span class="placeholder__caption">Você vai inserir a imagem aqui</span>
+    </div>
+    <div class="venue-info" style="margin-top:32px">
+      <p><strong>Local: Evolution Corporate</strong></p>
+      <p>Rua Miguel Matte, 687. Evolution Corporate.<br>Centro, Balneário Camboriú/SC.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="separator">
+
+<!-- ========== SEÇÃO 8 — VÍDEO ========== -->
+<section class="section section--alt" id="video">
+  <div class="container fade-in text-center">
+    <h2>Assista e entenda tudo antes de garantir sua vaga</h2>
+    <p style="margin:0 auto 1rem">Um vídeo direto sobre a imersão, vendas e principais dúvidas…</p>
+    <div class="video-container">
+      <video src="VIDEO-GENESIS.MP4" controls preload="metadata" poster="">
+        Seu navegador não suporta a tag de vídeo.
+      </video>
+    </div>
+  </div>
+</section>
+
+<hr class="separator">
+
+<!-- ========== SEÇÃO 9 — INVESTIMENTO ========== -->
+<section class="section invest-section" id="investimento">
+  <div class="invest-glow"></div>
+  <div class="container fade-in text-center" style="position:relative;z-index:1">
+    <span class="badge" style="margin-bottom:1.8rem">Investimento</span>
+    <h2>Não é apenas um evento.<br>É um novo começo.</h2>
+    <p style="margin:0 auto 1.5rem;max-width:560px">Tudo foi pensado para que a experiência seja completa, profunda e memorável.</p>
+
+    <div class="invest-divider"></div>
+
+    <h3 class="invest-subtitle">O que está incluído na sua experiência:</h3>
+    <div class="value-tags">
+      <span class="value-tag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        Experiência imersiva presencial
+      </span>
+      <span class="value-tag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        Conteúdo estratégico de imagem e identidade
+      </span>
+      <span class="value-tag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        Dinâmicas profundas
+      </span>
+      <span class="value-tag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        Material exclusivo
+      </span>
+      <span class="value-tag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        Networking com mulheres qualificadas
+      </span>
+      <span class="value-tag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        Ambientação premium
+      </span>
+      <span class="value-tag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        Coffee break e experiência sensorial
+      </span>
+    </div>
+
+    <div class="invest-divider"></div>
+
+    <h3 class="invest-subtitle">Escolha seu ingresso:</h3>
+
+    <div class="pricing-grid-v2">
+      <div class="price-card-v2">
+        <div class="price-card-v2__label">1º Lote</div>
+        <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>397<span class="price-card-v2__cents">,00</span></div>
+        <div class="price-card-v2__desc">Acesso à imersão completa</div>
+        <div class="price-card-v2__tag">Condição especial de lançamento</div>
+      </div>
+      <div class="price-card-v2">
+        <div class="price-card-v2__label">2º Lote</div>
+        <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>497<span class="price-card-v2__cents">,00</span></div>
+        <div class="price-card-v2__desc">Acesso à imersão completa</div>
+        <div class="price-card-v2__tag">Após encerramento do 1º lote</div>
+      </div>
+      <div class="price-card-v2 price-card-v2--featured">
+        <div class="price-card-v2__badge-top">Mais escolhido</div>
+        <div class="price-card-v2__label">Ingresso Diamond</div>
+        <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>680<span class="price-card-v2__cents">,00</span></div>
+        <div class="price-card-v2__desc">Imersão + benefícios exclusivos</div>
+        <div class="price-card-v2__tag">Experiência premium completa</div>
+      </div>
+      <div class="price-card-v2">
+        <div class="price-card-v2__label">Ingresso Duplo</div>
+        <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>680<span class="price-card-v2__cents">,00</span></div>
+        <div class="price-card-v2__desc">2 ingressos pelo preço de 1 Diamond</div>
+        <div class="price-card-v2__tag">Traga alguém e divida a experiência</div>
+      </div>
+    </div>
+
+    <div style="margin-top:48px">
+      <a href="#" class="btn btn--primary btn--large">
+        <span class="btn__text">Quero viver a Imersão Gênesis</span>
+        <span class="btn__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </a>
+      <p class="micro-text" style="margin-top:16px">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:4px"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Vagas limitadas — garanta a sua antes do próximo lote.
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr class="separator">
+
+<!-- ========== SEÇÃO 10 — PARA QUEM É ========== -->
+<section class="section section--alt" id="para-quem">
+  <div class="container fade-in">
+    <h2>Essa imersão é para mulheres que:</h2>
+    <div class="for-who-grid">
+      <div class="for-who-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>Sentem que evoluíram, mas a imagem não acompanha</span>
+      </div>
+      <div class="for-who-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>Querem transmitir mais autoridade e presença</span>
+      </div>
+      <div class="for-who-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>Desejam atrair clientes mais qualificados</span>
+      </div>
+      <div class="for-who-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>Buscam clareza sobre estilo e identidade</span>
+      </div>
+      <div class="for-who-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>Estão cansadas de comprar roupas sem estratégia</span>
+      </div>
+      <div class="for-who-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>Querem se posicionar com segurança profissional</span>
+      </div>
+      <div class="for-who-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>Desejam desenvolver elegância natural</span>
+      </div>
+      <div class="for-who-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>Querem se sentir confiantes em reuniões e eventos</span>
+      </div>
+    </div>
+
+    <div class="not-for-card">
+      <h3 style="color:var(--text-primary);margin-bottom:16px">Importante:</h3>
+      <p>Não é para quem quer apenas aprender a combinar roupas. É para quem quer reconstruir quem se tornou.</p>
+      <p>Não é para quem quer apenas aprender moda. É para quem quer viver um novo começo.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="separator">
+
+<!-- ========== SEÇÃO 11 — PALESTRANTES ========== -->
+<section class="section" id="palestrantes">
+  <div class="container fade-in text-center">
+    <span class="badge" style="margin-bottom:1.8rem">Quem conduz a imersão</span>
+    <h2>Mulheres que vivem o que ensinam.</h2>
+    <p style="margin:0 auto 1rem;max-width:560px">Cada palestrante traz uma área de transformação. Juntas, conduzem uma experiência completa.</p>
+
+    <div class="speakers-grid-v2">
+
+      <!-- SPEAKER 1 -->
+      <div class="speaker-card-v2">
+        <div class="speaker-card-v2__img">
+          <img src="sonia.webp" alt="Bispa Sonia Correa" class="speaker-img">
+        </div>
+        <div class="speaker-card-v2__body">
+          <span class="speaker-card-v2__role">Ministra</span>
+          <h3>Bispa Sonia Correa</h3>
+          <p class="speaker-card-v2__tagline">Especialista em cura, libertação e restauração da identidade feminina.</p>
+          <div class="speaker-card-v2__bio" data-collapsed="true">
+            <div class="speaker-card-v2__bio-text">
+              <p>Há mais de 25 anos cuida de mulheres, sendo especialista em <strong>remover mulheres de cativeiros espirituais, conduzindo à cura, libertação e restauração da identidade.</strong></p>
+              <p>Fundadora do Mulheres Magníficas em Deus e cofundadora da União Eclesiástica para as Nações, tem como missão levantar mulheres para viverem seu propósito com liberdade, verdade e posicionamento espiritual.</p>
+            </div>
+          </div>
+          <button class="speaker-card-v2__toggle" onclick="toggleBio(this)">
+            <span>Ler mais</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- SPEAKER 2 -->
+      <div class="speaker-card-v2">
+        <div class="speaker-card-v2__img">
+          <img src="duda.webp" alt="Duda Soares" class="speaker-img">
+        </div>
+        <div class="speaker-card-v2__body">
+          <span class="speaker-card-v2__role">Palestrante</span>
+          <h3>Duda Soares</h3>
+          <p class="speaker-card-v2__tagline">Mentora de mulheres e comunicadora de moda — imagem como expressão de identidade e propósito.</p>
+          <div class="speaker-card-v2__bio" data-collapsed="true">
+            <div class="speaker-card-v2__bio-text">
+              <p>Bacharel em Direito e estudante de psicanálise clínica, mas acima de tudo, uma mulher chamada para despertar outras mulheres para a sua verdadeira identidade. Nascida em Joinville, 31 anos, casada e cristã.</p>
+              <p>Lidera o movimento 'Florescer', um espaço onde mulheres são encorajadas a se reconectar com quem realmente são, de dentro para fora. Atua como mentora de mulheres e comunicadora de moda, utilizando a imagem não apenas como estética, mas como expressão de identidade, posicionamento e propósito.</p>
+              <p>Acredita que quando uma mulher entende quem ela é no espírito, ela se posiciona com verdade em todas as áreas da sua vida — inclusive na forma como se veste, se comunica e ocupa o seu lugar no mundo.</p>
+            </div>
+          </div>
+          <button class="speaker-card-v2__toggle" onclick="toggleBio(this)">
+            <span>Ler mais</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- SPEAKER 3 -->
+      <div class="speaker-card-v2">
+        <div class="speaker-card-v2__img">
+          <img src="karol.webp" alt="Karol Valério" class="speaker-img">
+        </div>
+        <div class="speaker-card-v2__body">
+          <span class="speaker-card-v2__role">Palestrante</span>
+          <h3>Karol Valério</h3>
+          <p class="speaker-card-v2__tagline">Personal trainer e mentora — transformação integrada de corpo, mente e espírito.</p>
+          <div class="speaker-card-v2__bio" data-collapsed="true">
+            <div class="speaker-card-v2__bio-text">
+              <p>Karol Valerio é personal trainer e mentora de mulheres, apaixonada por despertar o potencial feminino por meio de uma abordagem integrada de corpo, mente e espírito. Como criadora do método SCULPT, conduz mulheres a uma transformação real e sustentável, baseada em estratégia, consciência e propósito.</p>
+              <p>Sua própria jornada de transformação vai além do físico: envolve amadurecimento emocional, fortalecimento espiritual e uma profunda conexão com o propósito de vida.</p>
+              <p>Hoje, seu propósito é despertar mulheres para viverem com intenção, identidade e posicionamento — tornando-se protagonistas de suas próprias histórias.</p>
+            </div>
+          </div>
+          <button class="speaker-card-v2__toggle" onclick="toggleBio(this)">
+            <span>Ler mais</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="separator">
+
+<!-- ========== SEÇÃO 12 — SOBRE LARISSA BOVO ========== -->
+<section class="section section--alt" id="sobre">
+  <div class="container fade-in">
+    <h2>Sobre Larissa Bovo</h2>
+    <div class="about-grid" style="margin-top:40px">
+      <div class="about-text">
+        <h3>Formação</h3>
+        <p>Consultora de imagem e estilo certificada, com formações em coloração pessoal, visagismo e comunicação não-verbal.</p>
+
+        <h3>Trajetória</h3>
+        <p>Ao longo dos últimos anos, Larissa acompanhou a transformação de centenas de mulheres — não apenas na forma como se vestem, mas na forma como se percebem e se posicionam.</p>
+        <p>Cada imersão, cada consultoria e cada encontro é guiado por um princípio: a roupa é o último passo. Antes, vem a mulher.</p>
+
+        <h3>Método</h3>
+        <p>O Método Gênesis integra identidade, imagem, presença e posicionamento em um processo único e profundo. Não é sobre tendências — é sobre verdade.</p>
+      </div>
+      <div>
+        <div class="placeholder" style="min-height:420px">
+          <span class="placeholder__icon">📷</span>
+          PLACEHOLDER DA IMAGEM
+          <span class="placeholder__caption">Você vai inserir a imagem aqui</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="separator">
+
+<!-- ========== SEÇÃO 13 — CTA FINAL ========== -->
+<section class="final-cta" id="cta-final">
+  <div class="container fade-in">
+    <h2>Antes de mudar a roupa…<br>uma nova mulher começa a surgir.</h2>
+    <p style="max-width:620px">Se você sente que está pronta para ser percebida como a mulher que se tornou… essa imersão é para você.</p>
+    <span class="badge">04 de Julho de 2026 • 9:15h às 20h • Balneário Camboriú/SC</span>
+    <br>
+    <a href="#investimento" class="btn btn--primary btn--large" style="margin-top:8px">
+      <span class="btn__text">Quero viver a Imersão Gênesis</span>
+      <span class="btn__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </span>
+    </a>
+  </div>
+</section>
+`;
+})();
