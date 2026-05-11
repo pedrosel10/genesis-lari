@@ -132,6 +132,8 @@ h4 {
   line-height: 1.2;
   color: var(--text-primary);
   text-shadow: 0 0 40px rgba(189,234,241,0.08);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 h1 {

@@ -370,7 +370,7 @@
 <section class="final-cta" id="cta-final">
   <div class="container fade-in">
     <img src="logo-azul.svg" alt="Imersão Gênesis" class="section-logo">
-    <h2>Antes de mudar a roupa…<br>uma nova mulher começa a surgir.</h2>
+    <h2>Antes de mudar a roupa… uma nova mulher começa a surgir.</h2>
     <p style="max-width:620px">Se você sente que está pronta para ser percebida como a mulher que se tornou… essa imersão é para você.</p>
     <span class="badge">04 de Julho de 2026 • 9:15h às 20h • Balneário Camboriú/SC</span>
     <br>
