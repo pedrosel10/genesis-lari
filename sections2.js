@@ -2,7 +2,20 @@
 (function () {
   const target = document.getElementById('part2');
   if (!target) return;
+
+  const checkSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+
   target.outerHTML = `
+
+<!-- ========== DECORATIVE IMAGE STRIP ========== -->
+<section class="deco-image-section">
+  <div class="deco-image-strip">
+    <img src="image_2_1x.webp" alt="Imersão Gênesis — Detalhe" loading="lazy">
+    <img src="image_3_1x.webp" alt="Imersão Gênesis — Florescer" loading="lazy">
+    <img src="image_4_1x.webp" alt="Imersão Gênesis — Palavra" loading="lazy">
+  </div>
+</section>
+
 <hr class="separator">
 
 <!-- ========== SEÇÃO 7 — LOCAL ========== -->
@@ -56,7 +69,7 @@
 <section class="section invest-section" id="investimento">
   <div class="invest-glow"></div>
   <div class="container fade-in text-center" style="position:relative;z-index:1">
-    <img src="logoverdeescuro.svg" alt="Imersão Gênesis" class="section-logo">
+    <img src="logo-azul.svg" alt="Imersão Gênesis" class="section-logo">
     <span class="badge" style="margin-bottom:1.8rem">Investimento</span>
     <h2>Não é apenas um evento.<br>É um novo começo.</h2>
     <p style="margin:0 auto 1.5rem;max-width:560px">Tudo foi pensado para que a experiência seja completa, profunda e memorável.</p>
@@ -100,43 +113,82 @@
     <h3 class="invest-subtitle">Escolha seu ingresso:</h3>
 
     <div class="pricing-grid-v2" id="tabela-precos">
+
+      <!-- 1º LOTE -->
       <div class="price-card-v2">
         <div class="price-card-v2__label">1º Lote</div>
         <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>397<span class="price-card-v2__cents">,00</span></div>
-        <div class="price-card-v2__desc">Acesso à imersão completa</div>
         <div class="price-card-v2__tag">Condição especial de lançamento</div>
+        <ul class="price-card-v2__benefits">
+          <li>${checkSvg}<span>Acesso a Imersão Gênesis</span></li>
+          <li>${checkSvg}<span>Kit participante com material de apoio</span></li>
+          <li>${checkSvg}<span>Aula pós-imersão com Larissa Bovo</span></li>
+          <li>${checkSvg}<span>Acesso ao grupo privado de networking</span></li>
+          <li>${checkSvg}<span>Coffee break incluso</span></li>
+        </ul>
         <a href="https://chk.eduzz.com/6W4GOKNN0Z" target="_blank" class="btn btn--pricing">
           <span class="btn__text">Garantir Vaga</span>
         </a>
       </div>
+
+      <!-- 2º LOTE -->
       <div class="price-card-v2">
         <div class="price-card-v2__label">2º Lote</div>
         <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>497<span class="price-card-v2__cents">,00</span></div>
-        <div class="price-card-v2__desc">Acesso à imersão completa</div>
         <div class="price-card-v2__tag">Após encerramento do 1º lote</div>
+        <ul class="price-card-v2__benefits">
+          <li>${checkSvg}<span>Acesso a Imersão Gênesis</span></li>
+          <li>${checkSvg}<span>Kit participante com material de apoio</span></li>
+          <li>${checkSvg}<span>Aula pós-imersão com Larissa Bovo</span></li>
+          <li>${checkSvg}<span>Acesso ao grupo privado de networking</span></li>
+          <li>${checkSvg}<span>Coffee break incluso</span></li>
+        </ul>
         <a href="https://chk.eduzz.com/R9JXD1480X" target="_blank" class="btn btn--pricing">
           <span class="btn__text">Garantir Vaga</span>
         </a>
       </div>
+
+      <!-- DIAMOND -->
       <div class="price-card-v2 price-card-v2--featured">
-        <div class="price-card-v2__badge-top">Mais escolhido</div>
-        <div class="price-card-v2__label">Ingresso Diamond</div>
+        <div class="price-card-v2__badge-top">Experiência Premium</div>
+        <div class="price-card-v2__label">Participantes Diamond</div>
         <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>680<span class="price-card-v2__cents">,00</span></div>
-        <div class="price-card-v2__desc">Imersão + benefícios exclusivos</div>
         <div class="price-card-v2__tag">Experiência premium completa</div>
+        <ul class="price-card-v2__benefits">
+          <li>${checkSvg}<span>Acesso completo à Imersão Gênesis</span></li>
+          <li>${checkSvg}<span>Kit participante com material de apoio</span></li>
+          <li>${checkSvg}<span class="price-card-v2__benefit-highlight">Kit VIP Diamond com mimos especiais</span></li>
+          <li>${checkSvg}<span>Coffee break</span></li>
+          <li>${checkSvg}<span class="price-card-v2__benefit-highlight">Jantar exclusivo pré-evento com palestrantes e convidadas especiais</span></li>
+          <li>${checkSvg}<span class="price-card-v2__benefit-highlight">Assento reservado (primeiras fileiras)</span></li>
+          <li>${checkSvg}<span class="price-card-v2__benefit-highlight">Acesso ao camarim</span></li>
+          <li>${checkSvg}<span>Acompanhamento de imagem pós-evento com a Larissa Bovo</span></li>
+          <li>${checkSvg}<span>Acesso ao Clube da curadoria por 60 dias</span></li>
+          <li>${checkSvg}<span>Acesso ao grupo privado de networking</span></li>
+        </ul>
         <a href="https://chk.eduzz.com/797ZDX2V0E" target="_blank" class="btn btn--pricing">
           <span class="btn__text">Garantir Vaga</span>
         </a>
       </div>
+
+      <!-- INGRESSO DUPLO -->
       <div class="price-card-v2">
         <div class="price-card-v2__label">Ingresso Duplo</div>
         <div class="price-card-v2__price"><span class="price-card-v2__currency">R$</span>680<span class="price-card-v2__cents">,00</span></div>
-        <div class="price-card-v2__desc">2 ingressos pelo preço de 1 Diamond</div>
         <div class="price-card-v2__tag">Traga alguém e divida a experiência</div>
+        <ul class="price-card-v2__benefits">
+          <li>${checkSvg}<span class="price-card-v2__benefit-highlight">2 Ingressos</span></li>
+          <li>${checkSvg}<span>Acesso a Imersão Gênesis</span></li>
+          <li>${checkSvg}<span>Kit participante com material de apoio</span></li>
+          <li>${checkSvg}<span>Aula pós-imersão com Larissa Bovo</span></li>
+          <li>${checkSvg}<span>Acesso ao grupo privado de networking</span></li>
+          <li>${checkSvg}<span>Coffee break incluso</span></li>
+        </ul>
         <a href="https://chk.eduzz.com/D0R8NYB69Y" target="_blank" class="btn btn--pricing">
           <span class="btn__text">Garantir Vaga</span>
         </a>
       </div>
+
     </div>
 
     <div style="margin-top:48px">
@@ -317,7 +369,7 @@
 <!-- ========== SEÇÃO 13 — CTA FINAL ========== -->
 <section class="final-cta" id="cta-final">
   <div class="container fade-in">
-    <img src="logoverdeescuro.svg" alt="Imersão Gênesis" class="section-logo">
+    <img src="logo-azul.svg" alt="Imersão Gênesis" class="section-logo">
     <h2>Antes de mudar a roupa…<br>uma nova mulher começa a surgir.</h2>
     <p style="max-width:620px">Se você sente que está pronta para ser percebida como a mulher que se tornou… essa imersão é para você.</p>
     <span class="badge">04 de Julho de 2026 • 9:15h às 20h • Balneário Camboriú/SC</span>
